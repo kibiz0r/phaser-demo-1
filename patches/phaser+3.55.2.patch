@@ -1,0 +1,14 @@
+diff --git a/node_modules/phaser/types/phaser.d.ts b/node_modules/phaser/types/phaser.d.ts
+index d2b6d21..15806d2 100644
+--- a/node_modules/phaser/types/phaser.d.ts
++++ b/node_modules/phaser/types/phaser.d.ts
+@@ -71795,7 +71795,8 @@ declare namespace Phaser {
+                  * @param gameObject A Game Object.
+                  * @param isStatic Create a Static body (true) or Dynamic body (false). Default false.
+                  */
+-                existing<G extends Phaser.GameObjects.GameObject>(gameObject: G, isStatic?: boolean): G;
++                existing<G extends Phaser.GameObjects.GameObject>(gameObject: G): G & Phaser.Types.Physics.Arcade.GameObjectWithDynamicBody;
++                existing<G extends Phaser.GameObjects.GameObject, TStatic extends boolean>(gameObject: G, isStatic?: TStatic): G & (TStatic extends true ? Phaser.Types.Physics.Arcade.GameObjectWithStaticBody : Phaser.Types.Physics.Arcade.GameObjectWithDynamicBody);
+ 
+                 /**
+                  * Creates a new Arcade Image object with a Static body.
