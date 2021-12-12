@@ -6,10 +6,18 @@ module.exports = {
   rootDir: "spec",
   testMatch: ["**/*.spec.ts"],
   testEnvironmentOptions: { html: "<!DOCTYPE html><body></body>" },
+  // transform: {
+  //   '^.+\\.(t|j)sx?$': ['esbuild-jest', {
+  //     sourcemap: true,
+  //   }],
+  //   // '^.+\\.(t|j)sx?$': '@swc/jest',
+  // },
   transform: {
-    '^.+\\.(t|j)sx?$': ['esbuild-jest', {
-      sourcemap: true,
-    }],
-    // '^.+\\.(t|j)sx?$': '@swc/jest',
-  },
+    "^.+\\.tsx?$": [
+      "esbuild-jest",
+      {
+        sourcemap: true,
+      }
+    ]
+  }
 };

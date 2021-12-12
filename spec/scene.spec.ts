@@ -1,5 +1,7 @@
 import Phaser from "phaser";
 
+// const Phaser = require("phaser");
+
 describe("fo", () => {
   it("do", () => {
     const game = new Phaser.Game({
@@ -26,6 +28,7 @@ describe("fo", () => {
     // game.step(0, 1000);
     game.headlessStep(0, 1000);
     expect(zone.x).toBe(25);
+    // expect(true).toBe(5);
   });
   // it("do", () => {
   //   const game = new Phaser.Game({
