@@ -752,6 +752,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@maman/patch-package@npm:6.4.7-p1":
+  version: 6.4.7-p1
+  resolution: "@maman/patch-package@npm:6.4.7-p1"
+  dependencies:
+    "@yarnpkg/lockfile": ^1.1.0
+    chalk: ^2.4.2
+    cross-spawn: ^6.0.5
+    find-yarn-workspace-root: ^2.0.0
+    fs-extra: ^7.0.1
+    is-ci: ^2.0.0
+    klaw-sync: ^6.0.0
+    minimist: ^1.2.0
+    open: ^7.4.2
+    rimraf: ^2.6.3
+    semver: ^5.6.0
+    slash: ^2.0.0
+    tmp: ^0.0.33
+    yaml: ^1.10.2
+  bin:
+    patch-package: index.js
+  checksum: db418218765d89adfbbd159df74e1613870939117589057ae59537f6bf9d2a4f0ccc00e352d6a6cf95bc8d62ac0ac24ff7656c4b11536e466ab194d4a329b5f6
+  languageName: node
+  linkType: hard
+
 "@mapbox/node-pre-gyp@npm:^1.0.0":
   version: 1.0.7
   resolution: "@mapbox/node-pre-gyp@npm:1.0.7"
@@ -8294,29 +8318,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"patch-package@npm:^6.4.7":
-  version: 6.4.7
-  resolution: "patch-package@npm:6.4.7"
-  dependencies:
-    "@yarnpkg/lockfile": ^1.1.0
-    chalk: ^2.4.2
-    cross-spawn: ^6.0.5
-    find-yarn-workspace-root: ^2.0.0
-    fs-extra: ^7.0.1
-    is-ci: ^2.0.0
-    klaw-sync: ^6.0.0
-    minimist: ^1.2.0
-    open: ^7.4.2
-    rimraf: ^2.6.3
-    semver: ^5.6.0
-    slash: ^2.0.0
-    tmp: ^0.0.33
-  bin:
-    patch-package: index.js
-  checksum: f36d5324da3b69ee635e7cd2c68f4d3dd89dc91d60ffdaad3b602fd953277f4da901c91033683bf6ff31c14799bc049849af3a389455c25d0435fe9cfb0d4088
-  languageName: node
-  linkType: hard
-
 "path-browserify@npm:^1.0.0":
   version: 1.0.1
   resolution: "path-browserify@npm:1.0.1"
@@ -8423,6 +8424,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "phaser-demo1@workspace:."
   dependencies:
+    "@maman/patch-package": 6.4.7-p1
     "@swc/cli": ^0.1.52
     "@swc/core": ^1.2.118
     "@swc/jest": ^0.2.12
@@ -8442,8 +8444,8 @@ __metadata:
     jsdom: ^19.0.0
     lodash: ^4.17.21
     parcel: ^2.0.1
-    patch-package: ^6.4.7
     phaser: ^3.55.2
+    postinstall-postinstall: ^2.1.0
     sinon: ^12.0.1
     ts-jest: ^27.1.0
     typescript: ^4.5.2
@@ -9029,6 +9031,13 @@ __metadata:
     posthtml-parser: ^0.10.0
     posthtml-render: ^3.0.0
   checksum: b3313590eb5139b40bb8d60c950c6f25ce17ce9dcd18e154f96d3d80a990ed2b097e706dfd5195ca400125e77290b1d793f764ccfe5a93643c441d242b5803c6
+  languageName: node
+  linkType: hard
+
+"postinstall-postinstall@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "postinstall-postinstall@npm:2.1.0"
+  checksum: e1d34252cf8d2c5641c7d2db7426ec96e3d7a975f01c174c68f09ef5b8327bc8d5a9aa2001a45e693db2cdbf69577094d3fe6597b564ad2d2202b65fba76134b
   languageName: node
   linkType: hard
 
