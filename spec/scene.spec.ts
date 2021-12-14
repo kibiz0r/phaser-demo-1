@@ -4,6 +4,7 @@ import Phaser from "phaser";
 
 describe("fo", () => {
   it("do", () => {
+
     const game = new Phaser.Game({
       type: Phaser.HEADLESS,
       width: 1200,
@@ -27,7 +28,7 @@ describe("fo", () => {
     zone.body.setVelocity(25, 25);
     // game.step(0, 1000);
     game.headlessStep(0, 1000);
-    expect(zone.x).toBe(25);
+    expect(zone.x).toBe(27);
     // expect(true).toBe(5);
   });
   // it("do", () => {
